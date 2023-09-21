@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-primary">
+        <nav class="container">
+            <h1>MyPortfolio</h1>
+            <ul class="nav-links">
+                <li><i class="uil uil-multiply hide" id="hide"></i></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="uil uil-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div id="content">
+            <article id="about">
+                <div class="content-title">
+                    <h3>About Me</h3>
+                    <p>Description about my self</p>
+                </div>
+                <hr>
+                <div class="text-content">
+                    <p>I am a computer science student with a keen interest in web development. I have a strong command over various programming languages and frameworks. Along my academic journey, I've acquired valuable skills and knowledge in this field. I also hold certificates attesting to my proficiency, and I've worked on several intriguing projects that showcase my abilities. My passion for coding and creating web applications drives me to constantly learn and improve in the dynamic world of technology.
+                    </p>
+                </div>
+            </article>
+            <article id="certificate">
+                <div class="content-title">
+                    <h3>Certificates</h3>
+                    <p>Competency certificate</p>
+                </div>
+                <hr>
+                <div class="certificate-container">
+                    <div class="certificate-item">
+                        <img src="./img/react.png" alt="" onclick="showModal(this.src)">
+                        <h5>Belajar Membuat Aplikasi Web dengan React</h5>
+                        <span>2023 - 2026</span>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="./img/frontend.png" alt="" onclick="showModal(this.src)">
+                        <h5>Belajar Membuat Front-End Web untuk Pemula</h5>
+                        <span>2023 - 2026</span>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="./img/js.png" alt="" onclick="showModal(this.src)">
+                        <h5>Belajar dasar-dasar Pemrograman JavaScript</h5>
+                        <span>2023 - 2026</span>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="./img/logic.png" alt="" onclick="showModal(this.src)">
+                        <h5>Pengenalan ke Logika Pemrograman (Programming Logic 101)</h5>
+                        <span>2023 - 2026</span>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="./img/backend.png" alt="" onclick="showModal(this.src)">
+                        <h5>Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud</h5>
+                        <span>2023 - 2026</span>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="./img/software-dev.png" alt="" onclick="showModal(this.src)">
+                        <h5>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h5>
+                        <span>2023 - 2026</span>
+                    </div>
+                </div>
+            </article>
+            <article id="project">
+                <div class="content-title">
+                    <h3>Projects</h3>
+                    <p>Skills Showcase</p>
+                </div>
+                <hr>
+                <div class="project-container">
+                    <div class="project-item">
+                        <img src="./img/project1.png" alt="dribbble" onclick="showModal(this.src)">
+                        <h5>Taskero - Task Management Project Dashboard Page</h5>
+                        <span>Jan 2022 - March 2022</span>
+                    </div>
+                    <div class="project-item">
+                        <img src="./img/project2.png" alt="dribbble" onclick="showModal(this.src)">
+                        <h5>Urbanest - Landing Page Startup Finance Automation</h5>
+                        <span>April 2022 - May 2022</span>
+                    </div>
+                    <div class="project-item">
+                        <img src="./img/project3.png" alt="dribbble" onclick="showModal(this.src)">
+                        <h5>Synthetize - AI Productive Meeting Assistant Landing Page</h5>
+                        <span>June 2022 - August 2022</span>
+                    </div>
+                    <div class="project-item">
+                        <img src="./img/project4.png" alt="dribbble" onclick="showModal(this.src)">
+                        <h5>Dondu - Modern Ecommerce Admin Dashboard Page</h5>
+                        <span>September 2022 - Desember 2022</span>
+                    </div>
+                    <div class="project-item">
+                        <img src="./img/project5.png" alt="dribbble" onclick="showModal(this.src)">
+                        <h5>Monoma - Strategic Finance Elegant Landing Page</h5>
+                        <span>Jan 2023 - Feb 2023</span>
+                    </div>
+                </div>
+            </article>
+            <article id="contact">
+                <div class="content-title">
+                    <h3>Contact</h3>
+                    <p>Let's Collaborate</p>
+                </div>
+                <hr>
+                <div class="form-container">
+                    <form action="">
+                        <div class="grid gtcr2 gap-form">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <input type="text" placeholder="Email"><br>
+                        <textarea name="" id="" cols="30" placeholder="Message"></textarea><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </article>
+        </div>
+        <aside>
+            <img src="./img/me.png" alt="" width="120px" height="120">
+            <h3>Mochammad Yoga Firnanda</h3>
+            <span>Web Developer</span>
+            <div class="skills-tag">
+                <div class="tag-item">Laravel</div>
+                <div class="tag-item">Node.Js</div>
+                <div class="tag-item">Express.Js</div>
+                <div class="tag-item">React.Js</div>
+                <div class="tag-item">MySQL</div>
+                <div class="tag-item">MongoDB</div>
+            </div>
+        </aside>
+    </main>
+    <footer class="bg-secondary">
+        <div id="modal" class="modal">
+            <span class="close"><i class="uil uil-multiply"></i></span>
+            <img class="modal-content" id="modal-image">
+        </div>
+        <p>Copyright &copy; 2023 <a href="https://www.linkedin.com/in/mochammad-yoga-firnanda/" target="_blank">Firnanda</a>. All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
